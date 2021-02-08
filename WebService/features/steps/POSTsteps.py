@@ -6,7 +6,7 @@ import os
 
 @given(u'Verificamos existencia de Json para POST')
 def Existencia(context):
-    context.file = open("features//steps//FormatoJsonPOST.json",'r','r')
+    context.file = open("features//steps//FormatoJsonPOST.json",'r')
     
 
 @then(u'Obtenemos una respuesta igual a "{Respuesta}" de "{URL}"')
