@@ -26,7 +26,7 @@ def Respuesta(context,valor,URL,ID):
         "Formato del Schema incorrecto"
 
     assert context.status == valor , 'No es la respuesta esperada ' \
-                                     + valor +' es un ' + context.status + ' con mensaje: ' + context.mensaje[0]
+                                     + valor +' es un ' + context.status 
 
 
 
