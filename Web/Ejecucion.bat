@@ -4,6 +4,7 @@
 @echo 2. Tescase con reporte
 @echo 3. Salir
 @set /p var=
+@echo off
 if %var%==1 goto :Primero
 if %var%==2 goto :Segundo
 if %var%==3 goto :Salir
