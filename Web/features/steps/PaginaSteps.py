@@ -1,5 +1,6 @@
 from behave import *
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 import time
 
@@ -7,7 +8,7 @@ import time
 def AbrirExplorador(self):
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-logging"]) #Se agrega debido a que no se corre como admin asi no tira error por cmd
-    self.driver = webdriver.Chrome(options=options,executable_path=r"C:\dchrome\chromedriver.exe") #Colocar la ruta dónde esta el webdriver de chrome
+    self.driver = webdriver.Chrome(ChromeDriverManager().install(),options=options) #Colocar la ruta dónde esta el webdriver de chrome
 
 @when(u'Abrir demoblaze Pagina')
 def AbrirPagina(context):
