@@ -3,7 +3,7 @@ Tener instalado Python
 - pip install behave
 - pip install selenium
 - pip install webdriver-manager
-- pip install behave allure
+- pip install allure-pytest
 - pip install requests
 - pip install -U requests
 - pip install jsonpath
