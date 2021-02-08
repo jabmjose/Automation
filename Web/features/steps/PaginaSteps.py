@@ -6,7 +6,7 @@ import time
 @given(u'Abrir Explorador Chrome')
 def AbrirExplorador(self):
     options = webdriver.ChromeOptions()
-    options.add_experimental_option("excludeSwitches", ["enable-logging"]) #Se agrega debido a que no se corre como admin
+    options.add_experimental_option("excludeSwitches", ["enable-logging"]) #Se agrega debido a que no se corre como admin asi no tira error por cmd
     self.driver = webdriver.Chrome(options=options,executable_path=r"C:\dchrome\chromedriver.exe") #Colocar la ruta dónde esta el webdriver de chrome
 
 @when(u'Abrir demoblaze Pagina')
