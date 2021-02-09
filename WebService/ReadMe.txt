@@ -1,5 +1,7 @@
-- Librerias a tener en cuenta para bajar por pip
 Tener instalado Python
+Tener instalado Java Enviroment Variables
+
+Librerias a tener en cuenta para bajar por pip
 - pip install behave
 - pip install selenium
 - pip install webdriver-manager
