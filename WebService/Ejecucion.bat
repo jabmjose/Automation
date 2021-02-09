@@ -26,6 +26,7 @@ goto :Menu
 :Tercero
 cls 
 @echo Se ejecuta Allure para visualizar reporte ingresa ruta de reporte:
+cd allure-2.9.0\bin
 @set /p ruta=
 allure serve \ %ruta%
 @echo Reportes generado en la carpeta reports
