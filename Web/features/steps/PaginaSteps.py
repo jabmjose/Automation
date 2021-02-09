@@ -39,6 +39,7 @@ def DarAltaUsuario(context,nombre,clave):
 
     context.singup = context.driver.find_element_by_xpath("/html/body/div[2]/div/div/div[3]/button[2]")
     context.singup.click()
+    time.sleep(2)
     try:
         if context.singup.text == "This user already exist.":
             print("")
